@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  &--header {
+    height: 64px;
+    line-height: 64px;
+    background: grey;
+
+    .logo, .link {
+      height: 48px;
+      font-size: 36px;
+    }
+
+    .logo {
+      text-align: left;
+      float: left;
+      margin-left: 24px;
+    }
+
+    .link {
+      text-align: right;
+      float: right;
+      margin-right: 24px;
+    }
+  }
+}
+
+.page--heading {
+  height: 64px;
+  line-height: 64px;
+  font-size: 36px;
+}
+
+.list-container {
+  width: 90%;
+  margin: 16px 5%;
+
+  table {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.login-form {
+  max-width: 1080px;
+  margin: 16px auto;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.form-field {
+  height: 36px;
+  line-height: 16px;
+  width: 90%;
+  margin: 16px auto;
+  text-align: left;
+
+  &__label {
+    width: 30%;  
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  &__input {
+    width: 70%;
+    padding: 8px;
+    float: right;
+
+    &.btn {
+      width: 50%;
+      
+    } 
+  }
+
+  .form-flash {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    font-style: oblique;
+
+    &.success {
+      border: 1px solid green;
+    }
+
+    &.error {
+      border: 1px solid red;
+    }
+  }
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+}
